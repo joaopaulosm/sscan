@@ -19,11 +19,11 @@ CHECK_RELEASE = YES
 # Set this when you only want to compile this application
 #   for a subset of the cross-compiled target architectures
 #   that Base is built for.
-#CROSS_COMPILER_TARGET_ARCHS = vxWorks-68040
+CROSS_COMPILER_TARGET_ARCHS=linux-ppc64e6500
 
 # To install files into a location other than $(TOP) define
 #   INSTALL_LOCATION here.
-#INSTALL_LOCATION=</path/name/to/install/top>
+INSTALL_LOCATION=$(LITEEE_INSTALL)/$(LITEEE_BASE)/modules/sscan/2.10.2
 
 # Set this when your IOC and the host use different paths
 #   to access the application. This will be needed to boot

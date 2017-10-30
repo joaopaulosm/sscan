@@ -4,14 +4,14 @@
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
-SUPPORT=/home/oxygen/MOONEY/epics/synAppsSVN/support
+SUPPORT=$(LITEEE_INSTALL)/$(LITEEE_BASE)/modules
 -include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
 
 #If using the sequencer, point SNCSEQ at its top directory:
-SNCSEQ=$(SUPPORT)/seq-2-2-0-2
+SNCSEQ=$(SUPPORT)/seq/2.2.4
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/APSshare/epics/base-3.14.12.3
+EPICS_BASE=$(LITEEE_INSTALL)/$(LITEEE_BASE)/base
 -include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
 
 #Capfast users may need the following definitions
